@@ -24,7 +24,6 @@ export default class App extends Component {
 
     const fetchedData = await request.get(`https://alchemy-pokedex.herokuapp.com/api/pokedex?pokemon=${this.state.searchQuery}&type=${event.target.value}`);
   
-  
     this.setState({ data: fetchedData.body.results });
   }
 
@@ -35,7 +34,7 @@ export default class App extends Component {
       const fetchedData = await request.get(`https://alchemy-pokedex.herokuapp.com/api/pokedex?pokemon=${this.state.searchQuery}`);
 
 
-    this.setState({ data: fetchedData.body.results });
+    this.setState({ data: fetchedData.body.results});
     } else {
 
       const fetchedData = await request.get(`https://alchemy-pokedex.herokuapp.com/api/pokedex?pokemon=${this.state.searchQuery}&type=${this.state.selected}`);

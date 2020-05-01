@@ -9,7 +9,7 @@ export default class PokeList extends Component {
         <img src={this.props.pokemon.url_image}
         alt={this.props.pokemon.pokemon}></img>
 
-        <h2>{this.props.pokemon.type_1} : {this.props.pokemon.type_2}</h2>
+        <h2>{this.props.pokemon.type_1}{this.props.pokemon.type_2}</h2>
         <h2>{this.props.pokemon.ability_hidden}</h2>
         </div>)
     }
