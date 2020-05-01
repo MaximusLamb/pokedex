@@ -63,25 +63,29 @@ console.log('handleClick')
         <main>
 
         <SearchSection
-         className="list-section"
+            className="list-section"
             onChange={this.handleChange}
             onClick={this.handleClick}
             typeChange={this.handleTypeChange}
         />
 
                 <div>
+
                   <ul className="PokemonList">
+
                   {
                     this.state.data.map(item => {
+
                       return <PokeItem pokemon={item}/>
+                      
                     })
                   }
           
                   </ul>
                   
                 </div>
-        </main>
-        )
+      </main>
+              )
 
     }
 }

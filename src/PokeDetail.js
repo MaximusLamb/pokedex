@@ -10,25 +10,27 @@ export default class PokeDetail extends Component {
     async componentDidMount() {
 
         const data = await request.get(`https://alchemy-pokedex.herokuapp.com/api/pokedex/${this.props.match.params.pokemon}`)
-console.log(data.body)
+
         this.setState({ pokemon: data.body})
     }
+
     render() {
-const {pokemon, url_image, type_1, type_2, ability_hidden} = this.state.pokemon
+
+        const {pokemon, url_image, type_1, type_2, ability_hidden} = this.state.pokemon
+
         return (
         
           <section>
             <li>
+                <h1>{pokemon}</h1>
+                <img 
+                src={url_image}
+                alt={pokemon}>
+                </img>
+                <h2>{type_1}{type_2}</h2>
+                <h2>{ability_hidden}</h2>
         
-        <h1>{pokemon}</h1>
-                            
-        <img src={url_image}
-        alt={pokemon}></img>
-
-        <h2>{type_1}{type_2}</h2>
-        <h2>{ability_hidden}</h2>
-        
-        </li>
+            </li>
         </section>
         
         )

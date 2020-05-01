@@ -3,13 +3,18 @@ import React, { Component } from 'react'
 export default class SearchSection extends Component {
     render() {
         return (
-            <div>
-                <section className="options-section">
+        <div>
+            <section className="options-section">
+
                 <p>Search Pokemon:</p>
-          <input onChange={this.props.onChange} name="search" />
-          <button onClick={this.props.onClick}></button>
-                </section> 
-                <section className="types">
+
+                <input onChange={this.props.onChange} name="search" />
+                <button onClick={this.props.onClick}></button>
+
+            </section> 
+
+          <section className="types">
+
               <select className="pokemon-types" onChange={this.props.typeChange}>
                 <option value="" defaultValue>
                   All Types
@@ -33,8 +38,10 @@ export default class SearchSection extends Component {
                 <option value="steel">Steel</option>
                 <option value="water">Water</option>
               </select>
-            </section>
-            </div>
+
+          </section>
+          
+        </div>
         )
     }
 }
