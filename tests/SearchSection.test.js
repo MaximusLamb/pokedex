@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import SearchSection from './SearchSection.js';
+import SearchSection from '../SearchSection.js';
 
 test('SearchSection Snapshot', () => {
   const wrapper = shallow(<SearchSection />);
