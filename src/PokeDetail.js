@@ -21,7 +21,7 @@ export default class PokeDetail extends Component {
         return (
         
           <section>
-            <li>
+            <ul>
                 <h1>{pokemon}</h1>
                 <img 
                 src={url_image}
@@ -30,7 +30,7 @@ export default class PokeDetail extends Component {
                 <h2>{type_1}{type_2}</h2>
                 <h2>{ability_hidden}</h2>
         
-            </li>
+            </ul>
         </section>
         
         )

@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-import PokeDetail from './PokeDetail.js'
+import PokeDetail from '../PokeDetail.js'
 import React from 'react';
 
 test('PokeDetail Snapshot', () => {

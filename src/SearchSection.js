@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 
 export default class SearchSection extends Component {
+    
+
+
+
     render() {
+      
         return (
         <div>
             <section className="options-section">
@@ -10,6 +15,9 @@ export default class SearchSection extends Component {
 
                 <input onChange={this.props.onChange} name="search" />
                 <button onClick={this.props.onClick}></button>
+                {this.props.page > 1 && <button onClick={this.props.onPrevClick}>Previous</button>}
+                <button onClick={this.props.onNextClick}>Next</button>
+                
 
             </section> 
 

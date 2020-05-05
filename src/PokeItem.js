@@ -8,7 +8,7 @@ export default class PokeItem extends Component {
 
 return (
             <section>
-            <li>
+            <ul>
                 <Link to={`/pokemon/${_id}`}>
 
                     <h1>{pokemon}</h1>
@@ -16,11 +16,11 @@ return (
                     src={url_image}
                     alt={pokemon}>
                     </img>
-                    <h2>{type_1}{type_2}</h2>
+                    <h2>{type_1} {type_2}</h2>
                     <h2>{ability_hidden}</h2>
 
                 </Link>
-            </li>
+            </ul>
             </section>
         )
     }
